@@ -24,7 +24,7 @@ namespace Vid_App
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-journal-theme.css",
                       "~/Content/site.css"));
         }
     }
