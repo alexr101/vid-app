@@ -1,9 +1,31 @@
-﻿@* Get the model *@
-@model Vid_App.Models.Movie
+﻿@*
+    Get the model
+    You can only call ONE model per view!
+*@
 
+@model Vid_App.ViewModels.RandomMovieViewModel
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Name</h2>
+<h2>@Model.Movie.Name</h2>
+
+<h3>Customers who've watched this movie</h3>
+
+@if (Model.Customers.Count == 0)
+{
+    <p>No one has viewed this movie yet!</p>
+}
+else
+{
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>@customer.Name</li>
+        }
+    </ul>
+}
+
+
+

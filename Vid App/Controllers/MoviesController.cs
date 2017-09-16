@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vid_App.Models;
+using Vid_App.ViewModels;
+
 
 namespace Vid_App.Controllers
 {
@@ -13,8 +15,19 @@ namespace Vid_App.Controllers
         public ViewResult Random()
         {
             var movie = new Movie() { Name = "Interstellar" };
+            var customers = new List<Customer>
+            {
+                new Customer { Name = "Customer 1" },
+                new Customer { Name = "Customer 2" }
+            };
 
-            return View(movie);
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            return View(viewModel);
             // Diffent Action Results
             
             //return Content('Hello World');
