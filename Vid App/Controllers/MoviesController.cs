@@ -23,5 +23,22 @@ namespace Vid_App.Controllers
             //return RedirectToAction("Index", "Home", new { page = 1, sortBy = "name"});
             // alternative: return new ViewResult(movie);
         }
+
+        public ActionResult ParameterTest(int id)
+        {
+            return Content(String.Format( "id in url parameter is: {0}", id ));
+        }
+           
+        // reference types (strings) are nullable by default
+        public ActionResult OptionalParameters(int? pageIndex, string sortBy)
+        {
+            pageIndex = (pageIndex.HasValue) ? pageIndex : 1;
+            sortBy = (!String.IsNullOrWhiteSpace(sortBy)) ? sortBy : "Name";
+
+            return Content(String.Format("PageIndex = {0} and SortBy = {1}", pageIndex, sortBy));
+
+
+        }
     }
+
 }
