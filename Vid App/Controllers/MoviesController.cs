@@ -24,6 +24,12 @@ namespace Vid_App.Controllers
             // alternative: return new ViewResult(movie);
         }
 
+        [Route("movies/released/{year:regex(\\d{4}):min(1900)}/{month:regex(\\d{2}):range(1,12)}")]
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(String.Format("year: {0} month: {1}", year, month));
+        }
+
         public ActionResult ParameterTest(int id)
         {
             return Content(String.Format( "id in url parameter is: {0}", id ));
@@ -35,9 +41,7 @@ namespace Vid_App.Controllers
             pageIndex = (pageIndex.HasValue) ? pageIndex : 1;
             sortBy = (!String.IsNullOrWhiteSpace(sortBy)) ? sortBy : "Name";
 
-            return Content(String.Format("PageIndex = {0} and SortBy = {1}", pageIndex, sortBy));
-
-
+            return Content(String.Format("PageIndex = {0} and SortBy = {1}", pageIndex, sortBy));        
         }
     }
 
