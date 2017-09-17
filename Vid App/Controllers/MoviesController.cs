@@ -18,7 +18,13 @@ namespace Vid_App.Controllers
             var customers = new List<Customer>
             {
                 new Customer { Name = "Customer 1" },
-                new Customer { Name = "Customer 2" }
+                new Customer { Name = "Customer 2" },
+                new Customer { Name = "Customer 3" },
+                new Customer { Name = "Customer 4" },
+                new Customer { Name = "Customer 5" },
+                new Customer { Name = "More than 5 customer so movie's hot! (CSS class on title)" },
+
+
             };
 
             var viewModel = new RandomMovieViewModel

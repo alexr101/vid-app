@@ -9,7 +9,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Movie.Name</h2>
+<style>
+    .popular-movie::before {
+        content: 'hot';
+        color: #cb1313;
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+    .movie-title{
+        display: inline-block;
+    }
+
+    .popular-movie-img {
+        display: inline-block;
+        width: 35px;
+        margin: 0 0 15px 10px;
+    }
+
+</style>
+
+@{
+    var popularMovie = (String)null;
+    var popularMovieImg = (String)null;
+
+    if(Model.Customers.Count > 5)
+    {
+        popularMovie = "popular-movie";
+        popularMovieImg = "https://cdn3.iconfinder.com/data/icons/funky/136/Fire-512.png";
+    }
+}
+
+<h2 class="@popularMovie movie-title">@Model.Movie.Name</h2><img class="popular-movie-img" src="@popularMovieImg" alt="" />
 
 <h3>Customers who've watched this movie</h3>
 
