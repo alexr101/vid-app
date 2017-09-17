@@ -1,3 +1,5 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\ApplicationInsights.config
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\roslyn\csc.exe
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\roslyn\csc.exe.config
@@ -77,7 +79,5 @@ C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\De
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\bin\Debug\System.Web.Optimization.xml
-C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.dll
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App.Tests\obj\Debug\Vid App.Tests.pdb

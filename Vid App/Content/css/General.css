@@ -1,0 +1,16 @@
+﻿table{
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+   
+td, th {
+   padding: 5px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}

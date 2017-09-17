@@ -13,7 +13,6 @@ namespace Vid_App
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapMvcAttributeRoutes(); // Allows us to use route contraints in the controller!
 
             // This route is good and all but it's very inflexible and filled w
             // magic strings. Use MVC Attribute Routes intead
@@ -28,6 +27,8 @@ namespace Vid_App
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            RouteTable.Routes.RouteExistingFiles = false;
+
         }
     }
 }

@@ -9,8 +9,40 @@ using Vid_App.ViewModels;
 
 namespace Vid_App.Controllers
 {
-    public class MoviesController : Controller
+    public class MovieController : Controller
     {
+
+        public ActionResult Index()
+        {
+            var movies = GetMovies();
+
+            return View(movies);
+        }
+
+        private IEnumerable<Movie> GetMovies()
+        {
+            return  new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Interstellar", ReleaseDate = DateTime.Now.Date},
+                new Movie { Id = 2, Name = "Lego Movie", ReleaseDate = DateTime.Now.Date},
+                new Movie { Id = 3, Name = "Kong: SKull Island", ReleaseDate = DateTime.Now.Date},
+                new Movie { Id = 4, Name = "Matrix", ReleaseDate = DateTime.Now.Date},
+            };
+
+        }
+
+        public ActionResult Details(int id)
+        {
+            var movie = GetMovies().SingleOrDefault(c => c.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
+        }
+
+
+
         // GET: Movies
         public ViewResult Random()
         {

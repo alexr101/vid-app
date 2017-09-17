@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Vid_App.Models.Customer>
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+
+<table>
+    <tr>
+        <td>Customer</td>
+        <td>Age</td>
+    </tr>
+
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(@customer.Name, "Details", "Customer", new { id = customer.Id}, null)</td>
+            <td>@customer.Age</td>
+        </tr>
+    }
+</table>
