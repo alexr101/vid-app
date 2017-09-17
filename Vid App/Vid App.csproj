@@ -193,6 +193,20 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
+    <Compile Include="Migrations\201709172223058_initialMigration.cs" />
+    <Compile Include="Migrations\201709172223058_initialMigration.Designer.cs">
+      <DependentUpon>201709172223058_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709172300593_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201709172300593_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201709172300593_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709172304514_AddMembershipType.cs" />
+    <Compile Include="Migrations\201709172304514_AddMembershipType.Designer.cs">
+      <DependentUpon>201709172304514_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -293,6 +307,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709172223058_initialMigration.resx">
+      <DependentUpon>201709172223058_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709172300593_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201709172300593_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709172304514_AddMembershipType.resx">
+      <DependentUpon>201709172304514_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

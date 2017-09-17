@@ -71,3 +71,7 @@ C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\bin\Microsof
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.initialMigration.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid App.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.AddIsSubscribedToCustomer.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.AddMembershipType.resources

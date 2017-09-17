@@ -20,6 +20,9 @@ namespace Vid_App.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Movie> Movie { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
