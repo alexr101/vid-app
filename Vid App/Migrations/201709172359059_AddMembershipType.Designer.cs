@@ -13,7 +13,7 @@ namespace Vid_App.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201709172304514_AddMembershipType"; }
+            get { return "201709172359059_AddMembershipType"; }
         }
         
         string IMigrationMetadata.Source

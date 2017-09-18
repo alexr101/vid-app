@@ -75,3 +75,4 @@ C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vi
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid App.csproj.GenerateResource.Cache
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.AddIsSubscribedToCustomer.resources
 C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.AddMembershipType.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\Vid App\Vid App\obj\Debug\Vid_App.Migrations.SeedMembershipType.resources

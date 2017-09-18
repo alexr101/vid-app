@@ -201,9 +201,13 @@
     <Compile Include="Migrations\201709172300593_AddIsSubscribedToCustomer.Designer.cs">
       <DependentUpon>201709172300593_AddIsSubscribedToCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201709172304514_AddMembershipType.cs" />
-    <Compile Include="Migrations\201709172304514_AddMembershipType.Designer.cs">
-      <DependentUpon>201709172304514_AddMembershipType.cs</DependentUpon>
+    <Compile Include="Migrations\201709172359059_AddMembershipType.cs" />
+    <Compile Include="Migrations\201709172359059_AddMembershipType.Designer.cs">
+      <DependentUpon>201709172359059_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709180000415_SeedMembershipType.cs" />
+    <Compile Include="Migrations\201709180000415_SeedMembershipType.Designer.cs">
+      <DependentUpon>201709180000415_SeedMembershipType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -315,8 +319,11 @@
     <EmbeddedResource Include="Migrations\201709172300593_AddIsSubscribedToCustomer.resx">
       <DependentUpon>201709172300593_AddIsSubscribedToCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709172304514_AddMembershipType.resx">
-      <DependentUpon>201709172304514_AddMembershipType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709172359059_AddMembershipType.resx">
+      <DependentUpon>201709172359059_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709180000415_SeedMembershipType.resx">
+      <DependentUpon>201709180000415_SeedMembershipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
